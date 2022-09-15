@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog-part</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <main class="container mt-5">
+      <section>
+        <div>
+          <h2>
+            Question-1:Difference Between Local Storage and Session Storage
+          </h2>
+        </div>
+        <div>
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Local Storage</th>
+                <th scope="col">Session Storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>The storage capacity of local storage is 5MB/10MB</td>
+                <td>The storage capacity of session storage is 5MB</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  As it is not session-based, it must be deleted via javascript
+                  or manually
+                </td>
+                <td>
+                  It’s session-based and works per window or tab. This means
+                  that data is stored only for the duration of a session, i.e.,
+                  until the browser (or tab) is closed
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>The client can only read local storage</td>
+                <td>The client can only read local storage</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>There are fewer old browsers that support it</td>
+                <td>There are fewer old browsers that support it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
