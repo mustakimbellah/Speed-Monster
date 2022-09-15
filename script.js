@@ -71,8 +71,8 @@ const gameOver = () => {
 
   // show result modal
   resultModal.innerHTML = "";
-  resultModal.classList.toggle("hidden");
-  modalBackground.classList.toggle("hidden");
+  resultModal.classList.toggle("hidden");  //hidden
+  modalBackground.classList.toggle("hidden");//hidden
   // clear user text
   display.innerHTML = "";
   // make it inactive
@@ -80,7 +80,7 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+    <p>You took: <span class="bold">${timeTaken.toFixed(0)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
@@ -115,7 +115,7 @@ const start = () => {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
-      display.classList.remove("inactive");
+      display.classList.remove("inactive"); //inactive
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
@@ -136,5 +136,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent.toFixed(0) : 0} seconds`;
 }, 1000);
