@@ -116,6 +116,65 @@
           </table>
         </div>
       </section>
+
+      <!-- question-3 -->
+      <section class="mt-5">
+        <div>
+          <h2>Question-3:How working in javascript event loop</h2>
+        </div>
+        <div>
+          <table class="table table-bordered text-center">
+            <thead>
+              <!-- <tr>
+                <th scope="col"></th>
+                <th scope="col">Global Scope</th>
+
+              </tr> -->
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  The event loop is the secret behind JavaScript’s asynchronous
+                  programming. JS executes all operations on a single thread,
+                  but using a few smart data structures, it gives us the
+                  illusion of multi-threading. Let’s take a look at what happens
+                  on the back-end.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  The call stack is responsible for keeping track of all the
+                  operations in line to be executed. Whenever a function is
+                  finished, it is popped from the stack.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  The event queue is responsible for sending new functions to
+                  the stack for processing. It follows the queue data structure
+                  to maintain the correct sequence in which all operations
+                  should be sent for execution.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  Whenever an async function is called, it is sent to a browser
+                  API. These are APIs built into the browser. Based on the
+                  command received from the call stack, the API starts its own
+                  single-threaded operation.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- question-4 -->
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
