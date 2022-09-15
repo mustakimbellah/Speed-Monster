@@ -14,6 +14,7 @@ body {
 .box-container {
   width: 70%;
   margin: 0 auto;
+
 }
 
 #question {
@@ -142,9 +143,11 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr); 
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 20px;
 }
 
 .card {
@@ -181,12 +184,24 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+
+
+@media only screen and (min-width: 900px) {
   .box-container {
-    padding: 0 20px;
-    width: 100%;
+    padding: 15px 15px;
+    width: 85%;
+  } 
+}
+
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+  .box-container {
+    padding: 5px 5px;
+    width: 80%;
   }
-  .card {
-    flex-direction: column;
+  #histories{
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
   }
 }
